@@ -25,6 +25,7 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<NoWarn>1701;1702;NU1608</NoWarn>
 		<TargetFramework>net10.0</TargetFramework>
+		<!--<TargetFrameworks>net11.0;net10.0</TargetFrameworks>-->
 		<VersionPrefix>$([System.DateTime]::UtcNow.ToString(yyyy.M.d.H))</VersionPrefix>
 	</PropertyGroup>
 
@@ -62,7 +63,7 @@
 		<Using Include="Xunit" />
 	</ItemGroup>
 
-	<PropertyGroup Condition="'$(Configuration)' == 'Release' And $(MSBuildProjectName.EndsWith('.Tests')) == false">
+	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.Tests')) == false">
 		<GenerateSBOM>true</GenerateSBOM>
 	</PropertyGroup>
 
@@ -78,7 +79,9 @@
 		<PackageReference Include="AutoFixture.Idioms" />
 		<PackageReference Include="AutoFixture.Xunit3" />
 		<PackageReference Include="AwesomeAssertions" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.NET.Test.Sdk" />
 		<PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" />
 		<PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
