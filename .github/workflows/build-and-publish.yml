@@ -1,6 +1,7 @@
 name: Build, test, pack, and publish
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "src/**"
