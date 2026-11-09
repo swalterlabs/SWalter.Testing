@@ -3,17 +3,14 @@ name: Build, test, pack, and publish
 on:
   workflow_dispatch:
   push:
-    paths:
-      - "src/**"
-      - "tests/**"
-      - "global.json"
-      - "NuGet.config"
-      - "Directory.Build.props"
-      - "Directory.Packages.props"
-      - ".github/workflows/build-and-publish.yml"
+  pull_request:
+    branches: ["main", "develop"]
 
 permissions:
+  actions: read
   contents: read
+  packages: read
+  security-events: write
 
 jobs:
   build-and-publish:
@@ -24,6 +21,7 @@ jobs:
       projects-parent-directory: src/
       tests-parent-directory: tests/
       azure-artifacts-source: https://pkgs.dev.azure.com/evilbaschdi/_packaging/evilfeed/nuget/v3/index.json
+      enable-codeql: ${{ github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop' }}
     secrets:
       AZURE_ARTIFACTS_PAT: ${{ secrets.AZURE_ARTIFACTS_PAT }}
       MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}
