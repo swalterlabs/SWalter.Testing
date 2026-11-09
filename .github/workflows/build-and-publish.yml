@@ -1,0 +1,28 @@
+name: Build, test, pack, and publish
+
+on:
+  push:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "global.json"
+      - "NuGet.config"
+      - "Directory.Build.props"
+      - "Directory.Packages.props"
+      - ".github/workflows/build-and-publish.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-publish:
+    uses: evilbaschdi/EvilBaschdi.BuildTemplates/.github/workflows/build-n-pack-multi-stage.yml@main
+    with:
+      projects: '["EvilBaschdi.Testing"]'
+      framework: net10.0
+      projects-parent-directory: src/
+      tests-parent-directory: tests/
+    secrets:
+      AZURE_ARTIFACTS_PAT: ${{ secrets.AZURE_ARTIFACTS_PAT }}
+      MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}
+      CODEBERG_API_KEY: ${{ secrets.CODEBERG_API_KEY }}
