@@ -23,6 +23,7 @@ jobs:
       framework: net10.0
       projects-parent-directory: src/
       tests-parent-directory: tests/
+      azure-artifacts-source: https://pkgs.dev.azure.com/evilbaschdi/_packaging/evilfeed/nuget/v3/index.json
     secrets:
       AZURE_ARTIFACTS_PAT: ${{ secrets.AZURE_ARTIFACTS_PAT }}
       MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}
