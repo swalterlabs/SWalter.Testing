@@ -1,15 +1,15 @@
 <Project>
 
 	<PropertyGroup>
-		<EvilBaschdiTestingApplyTestDefaults Condition="'$(EvilBaschdiTestingApplyTestDefaults)' == ''">true</EvilBaschdiTestingApplyTestDefaults>
-		<EvilBaschdiTestingEnableGlobalUsings Condition="'$(EvilBaschdiTestingEnableGlobalUsings)' == ''">true</EvilBaschdiTestingEnableGlobalUsings>
+		<SWalterTestingApplyTestDefaults Condition="'$(SWalterTestingApplyTestDefaults)' == ''">true</SWalterTestingApplyTestDefaults>
+		<SWalterTestingEnableGlobalUsings Condition="'$(SWalterTestingEnableGlobalUsings)' == ''">true</SWalterTestingEnableGlobalUsings>
 	</PropertyGroup>
 
 	<PropertyGroup>
 		<NoWarn>$(NoWarn);NU1608</NoWarn>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(EvilBaschdiTestingApplyTestDefaults)' == 'true' and '$(IsTestProject)' == 'true'">
+	<PropertyGroup Condition="'$(SWalterTestingApplyTestDefaults)' == 'true' and '$(IsTestProject)' == 'true'">
 		<GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">false</GenerateDocumentationFile>
 		<IsPackable Condition="'$(IsPackable)' == ''">false</IsPackable>
 	</PropertyGroup>
@@ -18,13 +18,13 @@
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(IsTestProject)' == 'true' and '$(EvilBaschdiTestingEnableGlobalUsings)' == 'true'">
+	<ItemGroup Condition="'$(IsTestProject)' == 'true' and '$(SWalterTestingEnableGlobalUsings)' == 'true'">
 		<Using Include="AutoFixture" />
 		<Using Include="AutoFixture.AutoNSubstitute" />
 		<Using Include="AutoFixture.Idioms" />
 		<Using Include="AutoFixture.Xunit3" />
-		<Using Include="EvilBaschdi.Testing" />
-		<Using Include="EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
+		<Using Include="SWalter.Testing" />
+		<Using Include="SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
 		<Using Include="AwesomeAssertions" />
 		<Using Include="NSubstitute" />
 		<Using Include="NSubstitute.Arg" Alias="Arg" />

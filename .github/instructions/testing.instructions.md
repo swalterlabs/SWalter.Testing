@@ -163,9 +163,9 @@ public void Constructor_ReturnsInterfaceName()
 All test files have access to these global usings from Directory.Build.props:
 - AutoFixture.Idioms
 - AutoFixture.Xunit3
-- EvilBaschdi.Testing
+- SWalter.Testing
 - AwesomeAssertions
-- EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection
+- SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection
 - NSubstitute
 - NSubstitute.ReturnsExtensions
 - Xunit

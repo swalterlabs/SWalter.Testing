@@ -3,7 +3,7 @@ using Xunit.Sdk;
 
 // ReSharper disable MemberCanBePrivate.Global
 
-namespace EvilBaschdi.Testing.Tests.Assertions.Microsoft.Extensions.DependencyInjection;
+namespace SWalter.Testing.Tests.Assertions.Microsoft.Extensions.DependencyInjection;
 
 public class ServiceCollectionAssertionsTest
 {

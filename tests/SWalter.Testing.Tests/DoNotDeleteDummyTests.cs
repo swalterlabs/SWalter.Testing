@@ -1,5 +1,5 @@
 #pragma warning disable FAA0002
-namespace EvilBaschdi.Testing.Tests;
+namespace SWalter.Testing.Tests;
 
 /// <summary>
 ///     Do not delete this class.

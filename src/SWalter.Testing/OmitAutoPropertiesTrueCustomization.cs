@@ -1,4 +1,4 @@
-namespace EvilBaschdi.Testing;
+namespace SWalter.Testing;
 
 /// <inheritdoc />
 internal class OmitAutoPropertiesTrueCustomization : ICustomization

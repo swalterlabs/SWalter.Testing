@@ -1,7 +1,7 @@
 using System.Reflection;
 using AutoFixture.Kernel;
 
-namespace EvilBaschdi.Testing.Extensions;
+namespace SWalter.Testing.Extensions;
 
 /// <summary>
 ///     Provides extension methods for verifying that all public asynchronous methods on a specified type have appropriate

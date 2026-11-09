@@ -15,11 +15,11 @@
 		<LangVersion>preview</LangVersion>
 		<OutputType>Exe</OutputType>
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageIconUrl><![CDATA[https://avatars1.githubusercontent.com/u/1897807?s=120&v=4]]></PackageIconUrl>
-		<PackageProjectUrl>https://github.com/evilbaschdi/EvilBaschdi.Testing</PackageProjectUrl>
+		<PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/323152839?s=180&v=4]]></PackageIconUrl>
+		<PackageProjectUrl>https://github.com/swalterlabs/SWalter.Testing</PackageProjectUrl>
 		<PackageTags>Testing</PackageTags>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<RepositoryUrl>https://github.com/evilbaschdi/EvilBaschdi.Testing</RepositoryUrl>
+		<RepositoryUrl>https://github.com/swalterlabs/SWalter.Testing</RepositoryUrl>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -55,8 +55,8 @@
 		<Using Include="AutoFixture.AutoNSubstitute" />
 		<Using Include="AutoFixture.Idioms" />
 		<Using Include="AutoFixture.Xunit3" />
-		<Using Include="EvilBaschdi.Testing" />
-		<Using Include="EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
+		<Using Include="SWalter.Testing" />
+		<Using Include="SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
 		<Using Include="AwesomeAssertions" />
 		<Using Include="NSubstitute" />
 		<Using Include="NSubstitute.ReturnsExtensions" />

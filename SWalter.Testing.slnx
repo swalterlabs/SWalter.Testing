@@ -13,9 +13,9 @@
     <File Path="README.md" />
   </Folder>
   <Folder Name="/src/">
-    <Project Path="src/EvilBaschdi.Testing/EvilBaschdi.Testing.csproj" />
+    <Project Path="src/SWalter.Testing/SWalter.Testing.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/EvilBaschdi.Testing.Tests/EvilBaschdi.Testing.Tests.csproj" />
+    <Project Path="tests/SWalter.Testing.Tests/SWalter.Testing.Tests.csproj" />
   </Folder>
 </Solution>

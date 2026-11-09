@@ -1,7 +1,7 @@
 using AwesomeAssertions.Execution;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection;
+namespace SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection;
 #if !DEBUG
     [System.Diagnostics.DebuggerNonUserCode]
 #endif

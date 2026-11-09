@@ -13,11 +13,11 @@
 		<None Include="readme.md" Pack="True" PackagePath="\">
 			<PackageCopyToOutput>true</PackageCopyToOutput>
 		</None>
-		<None Include="buildTransitive\EvilBaschdi.Testing.props" Pack="true" Visible="false" PackagePath="buildTransitive\$(PackageId).props" />
+		<None Include="buildTransitive\SWalter.Testing.props" Pack="true" Visible="false" PackagePath="buildTransitive\$(PackageId).props" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="EvilBaschdi.Testing.Tests" />
+		<InternalsVisibleTo Include="SWalter.Testing.Tests" />
 	</ItemGroup>
 
 </Project>

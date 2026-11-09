@@ -1,9 +1,9 @@
 using System.Reflection;
-using EvilBaschdi.Testing.Extensions;
+using SWalter.Testing.Extensions;
 
 // ReSharper disable All
 
-namespace EvilBaschdi.Testing.Tests.Extensions;
+namespace SWalter.Testing.Tests.Extensions;
 
 public class GuardClauseAssertionExtensionsTests
 {

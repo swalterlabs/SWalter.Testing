@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace EvilBaschdi.Testing.Extensions;
+namespace SWalter.Testing.Extensions;
 
 /// <summary>
 ///     Class for reflection helpers

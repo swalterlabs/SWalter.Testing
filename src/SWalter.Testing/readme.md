@@ -1,4 +1,4 @@
-# EvilBaschdi.Testing
+# SWalter.Testing
 
 This package offers custom NSubstitute AutoData attributes and the required NuGet references for unit tests.
 
@@ -7,10 +7,10 @@ This package offers custom NSubstitute AutoData attributes and the required NuGe
 (Example uses Global Package Management)
 
 ```xml
-<!-- Optional: disable auto global usings imported by EvilBaschdi.Testing.props -->
+<!-- Optional: disable auto global usings imported by SWalter.Testing.props -->
 <PropertyGroup>
-  <EvilBaschdiTestingApplyTestDefaults>false</EvilBaschdiTestingApplyTestDefaults>
-  <EvilBaschdiTestingEnableGlobalUsings>false</EvilBaschdiTestingEnableGlobalUsings>
+  <SWalterTestingApplyTestDefaults>false</SWalterTestingApplyTestDefaults>
+  <SWalterTestingEnableGlobalUsings>false</SWalterTestingEnableGlobalUsings>
 </PropertyGroup>
 
 <PropertyGroup>
@@ -22,8 +22,8 @@ This package offers custom NSubstitute AutoData attributes and the required NuGe
     <Using Include="AutoFixture.AutoNSubstitute" />
     <Using Include="AutoFixture.Idioms" />
     <Using Include="AutoFixture.Xunit3" />
-    <Using Include="EvilBaschdi.Testing" />
-    <Using Include="EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
+    <Using Include="SWalter.Testing" />
+    <Using Include="SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
     <Using Include="AwesomeAssertions" />
     <Using Include="NSubstitute" />
     <Using Include="NSubstitute.Arg" Alias="Arg" />
@@ -32,7 +32,7 @@ This package offers custom NSubstitute AutoData attributes and the required NuGe
 </ItemGroup>
 
 <ItemGroup>
-    <PackageReference Include="EvilBaschdi.Testing" />
+    <PackageReference Include="SWalter.Testing" />
     <PackageReference Include="xunit.v3.mtp-v2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="coverlet.collector">

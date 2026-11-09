@@ -1,9 +1,9 @@
-using EvilBaschdi.Testing.Extensions;
+using SWalter.Testing.Extensions;
 
 // ReSharper disable UnusedMember.Local
 // ReSharper disable NotAccessedField.Local
 
-namespace EvilBaschdi.Testing.Tests.Extensions;
+namespace SWalter.Testing.Tests.Extensions;
 
 public class ReflectionHelperTests
 {

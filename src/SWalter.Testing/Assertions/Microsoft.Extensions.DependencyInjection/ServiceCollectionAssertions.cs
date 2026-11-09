@@ -2,7 +2,7 @@ using AwesomeAssertions.Execution;
 using AwesomeAssertions.Primitives;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection;
+namespace SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection;
 
 /// <inheritdoc />
 /// <summary>

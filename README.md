@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD033 -->
-# EvilBaschdi.Testing
+# SWalter.Testing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Target: .NET 10.0](https://img.shields.io/badge/.NET-10.0-512bd4.svg?style=for-the-badge&logo=dotnet)](Directory.Build.props)
@@ -10,18 +10,18 @@ Testing utilities, AutoFixture extensions, custom assertions, and AwesomeAsserti
 
 ## 📈 Quality & Activity
 
-| Branch                                                                                                                | Status & Activity                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| :-------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Main](https://img.shields.io/badge/branch-main-brightgreen?style=flat-square&logo=git&logoColor=white&color=c9ff00) | [![CodeFactor](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.Testing/badge/main?style=flat-square)](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.Testing/overview/main) ![Commit Activity Main](https://img.shields.io/github/commit-activity/m/evilbaschdi/EvilBaschdi.Testing/main?style=flat-square) ![Last Commit Main](https://img.shields.io/github/last-commit/evilbaschdi/EvilBaschdi.Testing/main?style=flat-square)                   |
-| ![Develop](https://img.shields.io/badge/branch-develop-blue?style=flat-square&logo=git&logoColor=white&color=0080ff)  | [![CodeFactor](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.Testing/badge/develop?style=flat-square)](https://www.codefactor.io/repository/github/evilbaschdi/EvilBaschdi.Testing/overview/develop) ![Commit Activity Develop](https://img.shields.io/github/commit-activity/m/evilbaschdi/EvilBaschdi.Testing/develop?style=flat-square) ![Last Commit Develop](https://img.shields.io/github/last-commit/evilbaschdi/EvilBaschdi.Testing/develop?style=flat-square) |
+| Branch                                                                                                                | Status & Activity                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| :-------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Main](https://img.shields.io/badge/branch-main-brightgreen?style=flat-square&logo=git&logoColor=white&color=c9ff00) | [![CodeFactor](https://www.codefactor.io/repository/github/swalterlabs/SWalter.Testing/badge/main?style=flat-square)](https://www.codefactor.io/repository/github/swalterlabs/SWalter.Testing/overview/main) ![Commit Activity Main](https://img.shields.io/github/commit-activity/m/swalterlabs/SWalter.Testing/main?style=flat-square) ![Last Commit Main](https://img.shields.io/github/last-commit/swalterlabs/SWalter.Testing/main?style=flat-square)                   |
+| ![Develop](https://img.shields.io/badge/branch-develop-blue?style=flat-square&logo=git&logoColor=white&color=0080ff)  | [![CodeFactor](https://www.codefactor.io/repository/github/swalterlabs/SWalter.Testing/badge/develop?style=flat-square)](https://www.codefactor.io/repository/github/swalterlabs/SWalter.Testing/overview/develop) ![Commit Activity Develop](https://img.shields.io/github/commit-activity/m/swalterlabs/SWalter.Testing/develop?style=flat-square) ![Last Commit Develop](https://img.shields.io/github/last-commit/swalterlabs/SWalter.Testing/develop?style=flat-square) |
 
 ---
 
 ## 📦 Packages in this Repository
 
-| Package                                          | Description                                                                              | Sources                                                                                                                                                                                                                                                                                                                 |
-| :----------------------------------------------- | :--------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`EvilBaschdi.Testing`](src/EvilBaschdi.Testing) | AutoFixture custom data attributes, GuardClause assertions, and DI assertion extensions. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/evilbaschdi/package/nuget/EvilBaschdi.Testing) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/EvilBaschdi.Testing) |
+| Package                                  | Description                                                                              | Sources                                                                                                                                                                                                                                                                                                         |
+| :--------------------------------------- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`SWalter.Testing`](src/SWalter.Testing) | AutoFixture custom data attributes, GuardClause assertions, and DI assertion extensions. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/SWalter.Testing) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/SWalter.Testing) |
 
 ---
 
@@ -31,7 +31,7 @@ All packages (Release and Preview builds) are published to **MyGet** and **Codeb
 
 | Registry     | Feed URL                                                         |
 | :----------- | :--------------------------------------------------------------- |
-| **MyGet**    | `https://www.myget.org/F/evilbaschdi/api/v3/index.json`          |
+| **MyGet**    | `https://www.myget.org/F/swalterlabs/api/v3/index.json`          |
 | **Codeberg** | `https://codeberg.org/api/packages/evilbaschdi/nuget/index.json` |
 
 ### Add Feed via .NET CLI
@@ -40,7 +40,7 @@ Choose either MyGet or Codeberg:
 
 ```bash
 # Option A: MyGet (recommended)
-dotnet nuget add source https://www.myget.org/F/evilbaschdi/api/v3/index.json -n "EvilBaschdi MyGet"
+dotnet nuget add source https://www.myget.org/F/swalterlabs/api/v3/index.json -n "SWalter Labs"
 
 # Option B: Codeberg
 dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/index.json -n "EvilBaschdi Codeberg"
@@ -55,21 +55,16 @@ dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/inde
   <packageSources>
     <clear />
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
-    <!-- Choose one of the following feeds: -->
-    <add key="EvilBaschdi MyGet" value="https://www.myget.org/F/evilbaschdi/api/v3/index.json" />
-    <!-- <add key="EvilBaschdi Codeberg" value="https://codeberg.org/api/packages/evilbaschdi/nuget/index.json" /> -->
+    <add key="SWalter Labs" value="https://www.myget.org/F/swalterlabs/api/v3/index.json" />
   </packageSources>
 
   <packageSourceMapping>
     <packageSource key="nuget.org">
       <package pattern="*" />
     </packageSource>
-    <packageSource key="EvilBaschdi MyGet">
-      <package pattern="EvilBaschdi.*" />
+    <packageSource key="SWalter Labs">
+      <package pattern="SWalter.*" />
     </packageSource>
-    <!-- <packageSource key="EvilBaschdi Codeberg">
-      <package pattern="EvilBaschdi.*" />
-    </packageSource> -->
   </packageSourceMapping>
 </configuration>
 ```
@@ -85,13 +80,13 @@ Install any package via `dotnet add package`:
 ### Standard Release
 
 ```bash
-dotnet add package EvilBaschdi.Testing
+dotnet add package SWalter.Testing
 ```
 
 ### Preview Builds
 
 ```bash
-dotnet add package EvilBaschdi.Testing --prerelease
+dotnet add package SWalter.Testing --prerelease
 ```
 
 ---
@@ -105,7 +100,7 @@ dotnet add package EvilBaschdi.Testing --prerelease
 A custom xUnit `[Theory]` attribute combining AutoFixture's `AutoDataAttribute` with NSubstitute automatic mocking and `OmitAutoProperties = true`.
 
 ```csharp
-using EvilBaschdi.Testing;
+using SWalter.Testing;
 using Xunit;
 
 [Theory, NSubstituteOmitAutoPropertiesTrueAutoData]
@@ -121,7 +116,7 @@ public void MyTest(IMyService service, MyDependency dependency)
 Combines `InlineAutoDataAttribute` with NSubstitute automatic mocking and `OmitAutoProperties = true`.
 
 ```csharp
-using EvilBaschdi.Testing;
+using SWalter.Testing;
 using Xunit;
 
 [Theory]
@@ -138,7 +133,7 @@ public void MyTest(string inlineValue, int inlineNumber, IMyService service)
 Verifies that public asynchronous methods on a type have proper null guards for reference parameters:
 
 ```csharp
-using EvilBaschdi.Testing.Extensions;
+using SWalter.Testing.Extensions;
 using AutoFixture.Xunit3;
 
 [Theory, NSubstituteOmitAutoPropertiesTrueAutoData]
@@ -154,10 +149,10 @@ public void VerifyAllAsyncMethodsHaveNullGuards(GuardClauseAssertion assertion)
 Assert service registrations with lifetime and implementation validations:
 
 ```csharp
-using EvilBaschdi.Testing;
+using SWalter.Testing;
 using AwesomeAssertions;
 using Microsoft.Extensions.DependencyInjection;
-using EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection;
+using SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection;
 
 var services = new ServiceCollection();
 services.AddSingleton<ISomeService, SomeService>();
