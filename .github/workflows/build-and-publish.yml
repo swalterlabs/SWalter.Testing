@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   build-and-publish:
-    uses: evilbaschdi/EvilBaschdi.BuildTemplates/.github/workflows/build-n-pack-multi-stage.yml@main
+    uses: swalterlabs/EvilBaschdi.BuildTemplates/.github/workflows/build-n-pack-multi-stage.yml@main
     with:
       projects: '["EvilBaschdi.Testing"]'
       framework: net10.0
