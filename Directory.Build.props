@@ -24,8 +24,8 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<NoWarn>1701;1702;NU1608</NoWarn>
-		<TargetFramework>net10.0</TargetFramework>
-		<!--<TargetFrameworks>net11.0;net10.0</TargetFrameworks>-->
+		<!--<TargetFramework>net12.0</TargetFramework>-->
+		<TargetFrameworks>net11.0;net10.0</TargetFrameworks>
 		<VersionPrefix>$([System.DateTime]::UtcNow.ToString(yyyy.M.d.H))</VersionPrefix>
 	</PropertyGroup>
 
