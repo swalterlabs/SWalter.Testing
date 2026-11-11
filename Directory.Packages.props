@@ -1,41 +1,41 @@
 <Project>
-	<PropertyGroup>
-		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-		<CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
-	</PropertyGroup>
-	<ItemGroup>
-		<PackageVersion Include="AutoFixture.AutoNSubstitute" Version="5.0.0-rc.1" />
-		<PackageVersion Include="AutoFixture.Idioms" Version="5.0.0-rc.1" />
-		<PackageVersion Include="AutoFixture.Xunit3" Version="5.0.0-rc.1" />
-		<PackageVersion Include="coverlet.collector" Version="10.1.0" />
-		<PackageVersion Include="coverlet.MTP" Version="10.1.0" />
-		<PackageVersion Include="AwesomeAssertions" Version="9.6.0" />
-		<PackageVersion Include="AwesomeAssertions.Analyzers" Version="9.0.8" />
-		<PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.13" />
-		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
-		<PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
-		<PackageVersion Include="Microsoft.Testing.Extensions.TrxReport" Version="2.5.2" />
-		<PackageVersion Include="NCrunch.Framework" Version="5.11.0" />
-		<PackageVersion Include="NSubstitute" Version="6.2.0" />
-		<PackageVersion Include="NSubstitute.Analyzers.CSharp" Version="1.0.17" />
-		<PackageVersion Include="xunit.v3" Version="4.0.3" />
-		<PackageVersion Include="xunit.v3.runner.utility" Version="4.0.3" />
-		<PackageVersion Include="xunit.v3.extensibility.core" Version="4.0.3" />
-		<PackageVersion Include="xunit.analyzers" Version="2.3.0" />
-		<PackageVersion Include="xunit.runner.visualstudio" Version="4.0.1" />
-	</ItemGroup>
-	<Choose>
-		<!-- .NET 10.0 specific versions -->
-		<When Condition=" '$(TargetFramework)' == 'net10.0' ">
-			<ItemGroup>
-				<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.15" />
-			</ItemGroup>
-		</When>
-		<!-- .NET 11.0 specific versions -->
-		<When Condition=" '$(TargetFramework)' == 'net11.0' ">
-			<ItemGroup>
-				<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="11.0.0" />
-			</ItemGroup>
-		</When>
-	</Choose>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="AutoFixture.AutoNSubstitute" Version="5.0.0-rc.1" />
+    <PackageVersion Include="AutoFixture.Idioms" Version="5.0.0-rc.1" />
+    <PackageVersion Include="AutoFixture.Xunit3" Version="5.0.0-rc.1" />
+    <PackageVersion Include="coverlet.collector" Version="10.1.0" />
+    <PackageVersion Include="coverlet.MTP" Version="10.1.0" />
+    <PackageVersion Include="AwesomeAssertions" Version="9.6.0" />
+    <PackageVersion Include="AwesomeAssertions.Analyzers" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.13" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.12.0" />
+    <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
+    <PackageVersion Include="Microsoft.Testing.Extensions.TrxReport" Version="2.5.3" />
+    <PackageVersion Include="NCrunch.Framework" Version="5.11.0" />
+    <PackageVersion Include="NSubstitute" Version="6.2.0" />
+    <PackageVersion Include="NSubstitute.Analyzers.CSharp" Version="1.0.17" />
+    <PackageVersion Include="xunit.v3" Version="4.0.3" />
+    <PackageVersion Include="xunit.v3.runner.utility" Version="4.0.3" />
+    <PackageVersion Include="xunit.v3.extensibility.core" Version="4.0.3" />
+    <PackageVersion Include="xunit.analyzers" Version="2.3.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.1" />
+  </ItemGroup>
+  <Choose>
+    <!-- .NET 10.0 specific versions -->
+    <When Condition=" '$(TargetFramework)' == 'net10.0' ">
+      <ItemGroup>
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.15" />
+      </ItemGroup>
+    </When>
+    <!-- .NET 11.0 specific versions -->
+    <When Condition=" '$(TargetFramework)' == 'net11.0' ">
+      <ItemGroup>
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="11.0.0" />
+      </ItemGroup>
+    </When>
+  </Choose>
 </Project>
